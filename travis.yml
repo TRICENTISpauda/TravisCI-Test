@@ -2,4 +2,4 @@ language: node_js
 
 script: 
  - npm run build
- - java -jar ToscaCIJavaClient.jar -x -e http://10.42.20.105:9999/DistributionServerService -t junit
+ - java -jar ToscaCIJavaClient.jar -x -e http://10.42.20.105:9999/DistributionServerService -c "./testConfig.xml" -t junit
